@@ -1,9 +1,42 @@
 *{
     /* font-size: 16px; */
+    box-sizing: border-box;
+}
+
+.container ul::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
-.content p{
+.container li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container ul .article1{
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 48%;
+}
+
+.container ul .article2{
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 48%;
+}
+
+.article-content p{
     color: blue;
     font-size: 2em;
     background-color: aqua;
