@@ -3,6 +3,27 @@
     box-sizing: border-box;
 }
 
+
+nav{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover{
+    color: aqua;
+}
+
 .container ul::after {
     content: "";
     display: table;
@@ -42,4 +63,10 @@
     background-color: aqua;
     text-align: center;
 
+}
+
+.article-img{
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
 }
