@@ -70,3 +70,36 @@ nav a:hover{
     height: auto;
     border-radius: 1em;
 }
+
+.form{
+    background-color: rgb(163, 161, 161);
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form input[type="submit"]{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: darkturquoise;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+
+.recipe li{
+    color: red;
+}

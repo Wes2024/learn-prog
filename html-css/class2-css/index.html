@@ -10,17 +10,13 @@
 
     <header>
         <h1>My first web page</h1>
-        <h2>Learning HTML and CSS</h2>
-        <h3>subtitulo</h3>
-        <h4>subtitulo</h4>
-        <h5>subtitulo</h5>
     </header>
 
     <nav>
         <a href="./index.html">Inicio</a>
         <a href="./enlaces_1.html" title="enlace de la pagina 1">Enlace N1</a>
         <a href="./enlaces_2.html" title="enlace de la pagina 2">Enlace N2</a>
-        <a href="enlaces/enlaces_2.html" target="_blank">Enlace target BLANK (pestaña extra)</a>
+        <a href="./enlaces/enlaces_2.html" target="_blank">Enlace target BLANK (pestaña extra)</a>
         <a href="">Sobre Mi</a>
     </nav>
 
@@ -29,14 +25,14 @@
             <ul>
                 <li class="article1">
                     <div class="article-content">
-                        <img class="article-img" src="/html-css/img/RE4.jpg" alt="imagen de RE4" title="Resident Evil 4">
+                        <img class="article-img" src="../img/RE4.jpg" alt="imagen de RE4" title="Resident Evil 4">
                         <p class="main-paragraph">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum assumenda incidunt nesciunt debitis possimus beatae provident totam, rem eligendi molestias vitae tempore maiores praesentium magnam repudiandae unde in. Sunt, aspernatur.
                         </p>
                     </div>
                 </li>
                 <li class="article2">
-                    <img class="article-img" src="/html-css/img/gaming-wallpapers-for-desktop-3.webp" alt="imagen de un auto" title="Auto">
+                    <img class="article-img" src="../img/gaming-wallpapers-for-desktop-3.webp" alt="imagen de un auto" title="Auto">
                     <div class="article-content">
                         <p class="main-paragraph">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum assumenda incidunt nesciunt debitis possimus beatae provident totam, rem eligendi molestias vitae tempore maiores praesentium magnam repudiandae unde in. Sunt, aspernatur.
@@ -46,6 +42,41 @@
             </ul>
         </article>
 
+        <h2>Contact Form</h2>
+        <form class="form">
+            <div class="form-content">
+                <label for="username">Enter name: </label>
+                <input type="text" class="name" placeholder="Enter Name" required name="username" value="username">
+                
+                <label for="password">Enter password: </label>
+                <input type="password" class="password" placeholder="Enter Password" required name="password" >
+
+                <input type="checkbox" class="checkbox">
+                <input type="file" class="file">
+                <input type="date" class="date" name="checkbox">
+
+
+                <label for="email">Enter email: </label>
+                <input type="email" class="email" placeholder="Enter Email" name="email" required>
+    
+                <label for="comment">Comments: </label>
+                <input type="textarea" class="comment" placeholder="Enter Comment" name="comment" required>
+    
+                <input type="submit" value="Submit form">
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <div class="recipe">
+        <li>Harina</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+        <li>Aceite</li>
+        <li>Sal</li>
     </div>
 
 
