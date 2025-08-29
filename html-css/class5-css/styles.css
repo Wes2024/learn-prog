@@ -68,3 +68,179 @@ input{
     border-top: 5px solid hsl(250, 60%, 40%);
     font-weight: bold;
 } 
+
+
+html{
+    /* font-size: 30px; */
+}
+
+body{
+    margin: 0;
+}
+
+.text{
+    background-color: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 4px solid #aaa;
+    font-size: 20px;
+    width: 80vw;
+    height:80vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+}
+
+.text_title{
+    font-size: 23px;
+    margin: 0;
+    /* background-color: #d00;
+    height: 50vh;
+    width: 50vw; */
+}
+
+.text_title span{
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.text_paragraph{
+    color: #555;
+    font-size: 1em;
+}
+
+
+/* Fondos */
+
+body{
+    background-color: #2ef;
+    margin: 0;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.box_dos{
+    /* width: 30vw; */
+    width: 100%;
+    height: 35vh;
+    margin: 20px;
+    /* background-color: #f3e9; */
+    /* background-color: transparent; */
+    /* background-image: url('https://img2.rtve.es/i/?w=1600&i=1679645657610.jpg'); */
+    /* background-size: cover; */
+    /* background-position: top; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    margin: 0;
+    /* background-attachment: fixed; */
+    background: url('https://img2.rtve.es/i/?w=1600&i=1679645657610.jpg') top / cover no-repeat fixed #f3e9;
+}
+
+
+.opaco{
+    width: 100%;
+    height: 100%;
+    background-color: #000a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+h3{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    padding: 30px;
+    color: #fff;
+    background: linear-gradient(to top, #9a9a9a, transparent);
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #f34f4f, transparent);
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+h3:hover::after{
+    opacity: 1;
+}
+
+
+.box_tres{
+    width: 500px;
+    height: 700px;
+    background-color: #343434;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+}
+
+.box_tres_content{
+    background: radial-gradient(transparent,#000a);
+    background: conic-gradient(transparent,#000a);
+    background: linear-gradient(to bottom, rgb(0, 0, 0),#000);
+    width: 300px;
+    /* height: 360px; */
+    transform: translate(120%, 10%); /* centra exacto */
+    margin:0;   
+    border-radius: 10px;
+    border-top: 5px solid #570099;
+    box-shadow: 0px 0px 40px 0px #570f8477 inset;
+    transition: all .5s ease-in-out;
+    
+}
+
+.box_tres_content:hover{
+    box-shadow: 0px 0px 40px 0px #570099;
+    transform: translate(120%, 4%);
+}
+
+.box_tres_titulo:hover{
+    text-shadow: 1px 0px 2px #e4e4e4;
+    cursor: pointer;
+}
+
+.box_tres_content .box_tres_texto{
+    color: #fff;
+    padding: 20px;
+    padding-top: 0;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+
+.box_tres_titulo{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #7001c4;
+    
+}
+
+.box_tres_img{
+    width: 200px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* box-shadow: 0px 0px 40px 0px #bebebe77; */
+    /* filter: drop-shadow(0px 0px 40px #9000ff); */
+} 
+
+.box_tres_img:hover{
+    filter: drop-shadow(0px 0px 40px  #9000ff);
+}
