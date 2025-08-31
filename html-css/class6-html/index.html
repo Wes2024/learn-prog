@@ -23,15 +23,48 @@
     <!-- <h1>Titulo</h1> -->
 
     <form action="">
-        <h2>Formulario de contacto</h2>
+        <!-- SIMPLE INPUTS -->
+        <h2>Contact form</h2>
         <div class="form_input">
-            <input type="text" placeholder="Full Name">
+            <label for="name_user">Full Name </label>
+            <input type="text" name="name_user" id="name_user" placeholder="Carlos Jose Martinez Sanchez">
         </div>
         <div class="form_input">
-            <input type="email" placeholder="Email">
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
         </div>
+        <!-- SELECT AND OPTION -->
         <div class="form_input">
-            <textarea rows="6" name="" id="" placeholder="Comment"></textarea>
+            <label for="type_of_user">Type of user</label>
+            <select name="type_of_user" id="">
+                <option value="user1">Follower</option>
+                <option value="user2">Company</option>
+                <option value="user3">Others</option>
+            </select>
+        </div>
+        <!-- DATALIST AND OPTION -->
+        <div class="form_input">
+            <label>Referrer
+                <input list="referrer" name="referre">
+                <datalist id="referrer" name="type_of_user">
+                    <option value="A friend">A friend recommended it to me</option>
+                    <option value="Videos">I found out through a video</option>
+                    <option value="A company">I learned about it through a company</option>
+                    <option value="Others">Other sources</option>
+                </datalist>
+            </label>
+        </div>
+        <!-- TEXT AREA -->
+        <div class="form_input">
+            <label>Message 
+                <textarea rows="6" name="text_user" readonly placeholder="Leave your message..."></textarea>
+            </label>
+        </div>
+        <!-- CHECKBOX -->
+        <div class="form_input">
+            <label>I accept the terms and conditions
+                <input type="checkbox" class="checkbox">
+            </label>
         </div>
 
     </form>
