@@ -23,16 +23,25 @@
     <!-- <h1>Titulo</h1> -->
 
     <form action="">
-        <!-- SIMPLE INPUTS -->
         <h2>Contact form</h2>
-        <div class="form_input">
-            <label for="name_user">Full Name </label>
-            <input type="text" name="name_user" id="name_user" placeholder="Carlos Jose Martinez Sanchez">
-        </div>
-        <div class="form_input">
-            <label for="email">Email </label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
-        </div>
+        
+        <fieldset>
+            <legend>Basic Information</legend>
+            <!-- SIMPLE INPUTS -->
+            <div class="form_input">
+                <label for="name_user">Full Name </label>
+                <input type="text" name="name_user" id="name_user" placeholder="Carlos Jose Martinez Sanchez">
+            </div>
+            <div class="form_input">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
+            </div>
+            <div class="form_input">
+                <label for="subject">Subject </label>
+                <input type="text" name="subject" id="subject" placeholder="The subject of your message...">
+            </div>
+        </fieldset>
+
         <!-- SELECT AND OPTION -->
         <div class="form_input">
             <label for="type_of_user">Type of user</label>
