@@ -1,0 +1,130 @@
+/* selecciona al elemento raiz del html */
+:root{  
+    color: #ccc;
+}
+
+h1{
+    color: #06a;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/* activar funcionamiento al pasar el mopuse por encima */
+h1:hover{
+    color: #cf0606;
+    background-color: #ccc;
+}
+
+/* activar funcionamiento al dar click en el elemento */
+h1:active{
+    color: #00ffff;
+    background-color: #000;
+}
+/* seleccionar el primer elemento , el primer li */
+
+li:first-child{
+    color: #ff0000;
+}
+
+/* seleccionar al segundo elemento */
+li:nth-child(3){
+    color: #cc00ff;
+}
+/* seleccionar un elemento hijo y luego otros 2 no y asi sucesivamente */
+li:nth-child(5n){
+    color: #cc00ff;
+}
+
+/* igual que child pero este solo cuenta los elementos del tipo de elemento o etiqueta asignado, en este caso solo cuenta los li */
+
+li:nth-of-type(2){
+    color: aliceblue;
+}
+
+/* seleccionar el ultimo elemento , el ultimo li */
+li:last-child{
+    color: #14e437;
+}
+
+
+/* modifica todos los elementos a excepcion del seleccionado con la funcion not*/
+.lista li:not(.excluir){
+    color: #f506ad;
+}
+
+/* selecciona elementos vacios */
+
+div:empty{
+    /* background-color: #00ffff;
+    padding: 30px; */
+    border: none;
+}
+
+div{
+    border: 2px solid black;
+}
+
+/* pseudoclase para elementos chequeados */
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+/* seleccionando enlaces no visitados */
+a:link{
+    color: red;
+}
+
+/* seleccionando enlaces visitados */
+a:visited{
+    color: green;
+}
+
+/* verifiacion de formato correo */
+/* input[type="email"]:invalid{
+    color: red;
+} */
+
+label:has(input[type="email"]:invalid){
+    color: #ff0000;
+}
+
+label:has(input[type="email"]:valid){
+    color: #10cb10;
+}
+
+input[type="email"]:valid, 
+input[type="email"]:invalid{
+    color: inherit;
+}
+
+/* :is() es un pseudoclases que sirve para seleccionar elemento dentro de otro elemento */
+/* version normal */
+section .elemento1,
+section .elemento2,
+section .elemento3{
+    color: red;
+}
+/* version con :is() */
+section :is(.elemento1, .elemento2, .elemento3){
+    color: blue !important; 
+}
+
+/* version con :where() NO CAMBIA LA ESPECIFICIDAD */
+section :where(.elemento1, .elemento2, .elemento3){
+    color: blue !important; 
+}
+
+/* .has() es una pseudoclases que se le da al elemento padre , es decir se modifica al elemento padre , pero al saber si contiene algun elemento especifico , EJ: section tiene un elemento1? */
+section:has(.elemento1){
+    background-color: #000;
+    color: #fff;
+}
+/* En caso de que a un UL le siga o aparesca un DIV modificaremos el UL */
+ul:has(+div){
+    background-color: rgb(90, 90, 90);
+}

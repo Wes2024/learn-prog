@@ -1,0 +1,65 @@
+body{
+    color: aquamarine;
+}
+
+/* Selector por atributo */
+/* img[src$='.jpg']{
+    width: 100%;
+} */
+img[src^='../img/RE4']{
+    width: 100%;
+}
+
+/* Selector desendiente */
+ul li{  
+    color: rgb(84, 83, 83);
+}
+
+
+/* Selector por hijo directo(ser hijo directo de un elemento) */
+li > strong{
+    color: red;
+}
+
+/* Selector de hermano adyacente (seleccionar el elemento a continuacion del elemento inicial) EJ: solo colorear una etiqueta p que este despues de un h1*/
+h1 + p + p{
+    color: blue;
+}
+
+/* Selector de hermanos generales (aplicar estilos a todos las etiquetas p que vengan luego de una etiqueta h1)*/
+h1 ~ p{
+    color: #e803e8;
+}
+
+h1, p {
+    color: brown;
+}
+
+/* Herencia */
+
+h2{
+    color: inherit;
+}
+
+/* No heredar un propiedad  */
+
+li{
+    color: initial;
+}
+
+/* Restablecer o resetear el atributo al que estaba por defecto  */
+
+li{
+    color: unset;
+}
+/* Restablecer o resetear el atributo al que estaba seleccionado por el programador  */
+
+li{
+    color: revert;
+}
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+#titulo{
+    color: lightgreen;
+}
+#titulo[class="titulo"]{
+    color: lightgreen;
+}
+
+.titulo .titulo2{
+    color: blue;
+}
+
+h1{
+    color: red;
+}
