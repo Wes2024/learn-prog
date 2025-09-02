@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #3e3e3e;
+}
+
+h1{
+    text-align: center;
+    color: #8500aa;
+}
+
+details{
+    width: 50vw;
+    height: 20%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 0.7em;
+    color: #ccc;
+    margin: auto;
+    border-radius: 10px;
+}
+
+summary{
+    background-color: transparent;
+    font-size: 1em;
+}
+
+ul{
+    font-weight: 100;
+    font-size: 1.2em;
+}
