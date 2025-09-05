@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh; 
+    background-color: #ccc;
+
+}
+
+
+.box{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 220px;
+    height: 220px;
+    margin-top: 50px;
+    /* transition-property: all; */
+    /* transition-delay: 3s; */
+    /* transition-property: left; */
+    /* transition-duration: 1s; */
+    /* transition: color 1s; */
+    /* transition-timing-function: cubic-bezier(.17,.67,.83,.67); */
+    transition: left, 1s cubic-bezier(.17,.67,.83,.67) 1s;
+    color: red;
+    position: relative;
+    left: 0;
+    border: 2px solid #000;
+    /* overflow-y: scroll; */
+    overflow: auto;
+    
+}
+
+/* .box:hover{
+
+} */
+
+body:hover .box{
+    left: 400px;
+}

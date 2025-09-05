@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #f509;
+    color: #fff;
+    /* position: relative; */
+}
+
+.contenedor{
+    border: 2px solid #000;
+    margin: 30px 50px;
+    background-color: #fff;
+    position: relative;
+}
+
+.box--blue{
+    /* top , left son prioritarias (bottom.right NO)*/
+    /* top: 50px; 
+    left: 50px; */
+    /* right: 50px;
+    bottom: 50px; */
+    /* z-index: 20; */
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+
+}
+
+.box--red{
+    background-color: red;
+    position: relative;
+}
+
+
+/* .box:first-child{
+    top: 130px;
+    left: 70px;
+    background-color: red;
+    z-index: 30;
+} */
