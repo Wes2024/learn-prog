@@ -18,8 +18,8 @@ body{
     /* transition-property: left; */
     /* transition-duration: 1s; */
     /* transition: color 1s; */
-    /* transition-timing-function: cubic-bezier(.17,.67,.83,.67); */
-    transition: left, 1s cubic-bezier(.17,.67,.83,.67) 1s;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    /* transition: left, 1s cubic-bezier(.17,.67,.83,.67) 1s; */
     color: red;
     position: relative;
     left: 0;

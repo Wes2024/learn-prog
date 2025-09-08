@@ -3,3 +3,16 @@ body{
     font-family: sans-serif;
     /* box-sizing: border-box; */
 }
+
+img{
+    width: 400px;
+    height: 800px;
+    margin: 50px;
+    border: 2px solid #000;
+    /* object-fit: full; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: none; */
+    object-fit: scale-down;  /*agarra el valor mas pequeño de las propiedades o tamaño de la iamgen asignada como width height o cualquier valor de object-fit*/
+    /* object-position: center; */
+}
