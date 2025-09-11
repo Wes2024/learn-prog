@@ -1,0 +1,46 @@
+:root{
+    --main_color: #ccc;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--main_color);
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    margin: auto;
+}
+
+video{
+    max-width:  100%;
+}
+/* .container{
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width:  100%;
+} */

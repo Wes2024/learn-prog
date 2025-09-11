@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srcset y sizes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <img src="../img/RE4.jpg" srcset="../img/RE4-small.png 360w, ../img/RE4-medium.png 600w, ../img/RE4.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" alt="imagen"> -->
+
+    <picture>
+        <source media="(min-width: 400px)" srcset="../img/RE4.jpg"><!-- grande solo en desktop -->
+        <img
+            src="../img/RE4-medium.png"
+            srcset="../img/RE4-small.png 360w, ../img/RE4-medium.png 600w"
+            sizes="100vw"
+            alt="imagen"
+            style="width:100%;height:auto"
+            loading="lazy" decoding="async">
+    </picture>
+</body>
+</html>
