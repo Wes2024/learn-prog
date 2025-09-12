@@ -8,9 +8,9 @@
 </head>
 <body>
     <!-- <img src="../img/RE4.jpg" srcset="../img/RE4-small.png 360w, ../img/RE4-medium.png 600w, ../img/RE4.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" alt="imagen"> -->
-
+<!-- 
     <picture>
-        <source media="(min-width: 400px)" srcset="../img/RE4.jpg"><!-- grande solo en desktop -->
+        <source media="(min-width: 400px)" srcset="../img/RE4.jpg">
         <img
             src="../img/RE4-medium.png"
             srcset="../img/RE4-small.png 360w, ../img/RE4-medium.png 600w"
@@ -18,6 +18,14 @@
             alt="imagen"
             style="width:100%;height:auto"
             loading="lazy" decoding="async">
+    </picture> -->
+
+    <!-- permite definitir contexto sobre imagenes que se usaran o opciones de imagenes -->
+    <picture>
+        <source type="image/webp" src="../img/RE4.webp">
+        <source media="(max-width: 400px)" srcset="../img/RE4-small.webp">
+        <source media="(max-width: 600px)" srcset="../img/RE4-medium.png">
+        <img src="../img/RE4.jpg" alt="imagen">
     </picture>
 </body>
 </html>
