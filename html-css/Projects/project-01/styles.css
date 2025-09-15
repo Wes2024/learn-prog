@@ -1,0 +1,17 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+    --color-grid: #48e;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}

@@ -1,0 +1,41 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+    --color-grid: #48e;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+/* grid con auto es para crecer en base al contenido tanto en width como height */
+.grid-layout{
+    background-color: #7f7f7f;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: auto auto auto; */
+    grid-template-rows: repeat(3,1fr);
+    /* height: 100vh; */
+}
+
+.caja{
+    /* width: 150px; */
+    /* height: 150px; */
+    background-color: red;
+    border: 1px solid #000;
+    /* align-content: center; */
+    text-align: center;
+    line-height: 150px;
+
+}

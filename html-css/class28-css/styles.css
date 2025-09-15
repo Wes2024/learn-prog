@@ -17,3 +17,28 @@ body{
 }
 
 /* MEDIA QUERIES */
+
+.flexbox{
+    display: flex;
+
+}
+
+.flex__item{
+    background-color: #636363;
+    padding: 30px;
+    border: 1px solid #f00;
+    flex-grow: 1;
+}
+
+@media print{
+    body{
+        font-size: 24pt;
+        color: #00f;
+    }
+}
+
+@media screen and (max-width:600px){
+    .flexbox{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,150 @@
+:root{
+    --main_color: #ccc;
+    --white_color: #fff;
+    --nav_color: #48e;
+    --footer_color: #1d2121;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--main_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-wrapper, header, footer{
+    width: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+:is(h1, h2, h3, h4) {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: balance;
+    hyphens: auto;
+}
+
+
+
+
+/* header */
+
+.header{
+    background-color: #48e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-navbar ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.main-navbar li{
+    list-style: none;
+    margin: 6px 9px;
+
+}
+
+.main-navbar a{
+    color: var(--white_color);
+    display: inline-block;
+    padding: 9px;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+/* Main section*/
+
+
+.main-wrapper{
+    display: flex;
+    flex-grow: 1;
+    max-width: 1024px;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    
+
+}
+
+aside, main{
+    padding: 10px 20px;
+    background-color: var(--white_color);
+}
+
+main{
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.secondary-navbar{
+    flex-grow: 1;
+    min-width: 12rem;
+    text-align: center;
+}
+
+.secondary-navbar ul{
+    padding: 0;
+}
+
+.secondary-navbar li{
+    list-style: none;
+}
+
+.secondary-navbar a{
+    color: var(--nav_color);
+    display: inline-block;
+    padding:  6px 10px;
+
+}
+
+aside:last-child{
+        display: none;
+}
+
+/* footer */
+footer{
+    margin-top: auto;
+    background-color: var(--footer_color);
+    color: var(--white_color);
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 580px){
+    .main-wrapper{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px){
+    aside:last-child{
+        display: block;
+        min-width: 12rem;   
+    }
+
+}

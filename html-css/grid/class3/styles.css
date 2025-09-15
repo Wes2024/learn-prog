@@ -1,0 +1,64 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+    --color-grid: #48e;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+/* grid con auto es para crecer en base al contenido tanto en width como height */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+    padding: 10px;
+    justify-items: stretch; 
+    justify-content: space-evenly;
+    height: 100vh;
+
+    align-items: stretch;
+    align-content: space-evenly;
+
+    border: 1px solid #000;
+    margin: 20px;
+    /* direction: rtl; */
+    
+}
+
+.grid-item:first-child{
+    /* direction: ltr;
+    justify-self: start; */
+    background-color: #e44;
+    /* align-self: end; */
+}
+/*
+.grid-item:nth-child(2){
+    justify-self: right; 
+}*/
+
+.grid-item{
+    background-color: #48e;
+    font-size: 2em;
+    max-width: 100%;
+    border-radius: 16px;
+    text-align: center;
+    /* line-height: 100px; */
+    padding: 10px ;
+}
+
+
+.grid-item:hover{
+    opacity: 0.74;
+}
