@@ -1,0 +1,237 @@
+:root{
+    --main_color: #222;
+    --color_white: #fff;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--main_color);
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+.wrapper{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: var(--color_white);
+    border-radius: 6px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+/* WAVE BUTTON */
+
+.btn-1{
+    border: 1px solid rgb(138, 138, 137);
+    overflow: hidden;
+}
+
+.btn-1::before{
+    content: '';
+    /* background-color: #48e; */
+    background-image: radial-gradient(circle, #7303f3, #090909);
+    display: block;
+    height: 20vh;
+    width: 50vw;
+    position: absolute;
+    border-radius: 50%;
+    top: 100%;
+    left: 30%;
+    z-index: -1;
+    transition: top .6s, left .6s ;
+}
+
+.btn-1:hover{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #03077e;
+}
+
+.btn-1:active{
+    box-shadow: 0px 0px 25px #7303f3;
+
+}
+
+.btn-1:hover::before{
+    top: -30%;
+    left: -30%;
+
+}
+
+/* NEON BUTTON */
+
+.button-container:has(.btn-2){
+    filter: drop-shadow(0 0 20px #7303f3),
+    drop-shadow(0 0 4px #7303f3);
+}
+
+.btn-2{
+    border: 1px solid #fff3;
+    color: #fff3;
+    z-index: 0;  
+}
+
+.btn-2:hover{
+    animation: blink 1s infinite alternate both;
+}
+
+.btn-2::before{
+    content: '';
+    background-color: #7303f3;
+    display: block;
+    height: 1px;
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    top: -16px;
+    transition: top .6s, opacity .6s, width .2s;
+    /* animation-play-state: paused;  */
+    animation: blink-lineal 1s infinite alternate both;
+}
+
+.btn-2:hover::before{
+    opacity: 1;
+    top: -5px;
+    width: 25vw;
+    /* animation-play-state: running;  */
+}
+.btn-2::after{
+    content: '';
+    background-color: #7303f3;
+    display: block;
+    height: 1px;
+    width: 5vw;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    top: -19px;
+    transition: top .6s, opacity .6s, width .2s;
+    /* animation-play-state: paused;  */
+    animation: blink-lineal 1s infinite alternate-reverse both;
+}
+
+.btn-2:hover::after{
+    opacity: 1;
+    top: -9px;
+    width: 20vw;
+    /* animation-play-state: running;  */
+}
+
+@keyframes blink{
+    0%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: 0;
+        box-shadow: 0;
+    }
+    25%{
+        border-color: #7303f3;
+        color: rgb(157, 75, 251);
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+        text-shadow: 0 0 9px #70f3, 0 0 3px rgba(187, 127, 255, 0.453);
+    }
+    30%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    35%{
+        /* border-color: #7303f3; */
+        color: rgb(157, 75, 251);
+        /* box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3; */
+        text-shadow: 0 0 9px #70f3, 0 0 3px rgba(187, 127, 255, 0.453);
+    }
+    45%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    60%{
+        border-color: #7303f3;
+        /* color: rgb(157, 75, 251); */
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+        /* text-shadow: 0 0 9px #70f3, 0 0 3px rgba(187, 127, 255, 0.453); */
+    }
+    72%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    100%{
+        /* border-color: #7303f3; */
+        color: rgb(157, 75, 251);
+        /* box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3; */
+        text-shadow: 0 0 9px #70f3, 0 0 3px rgba(187, 127, 255, 0.453);
+    }
+
+}
+
+@keyframes blink-lineal{
+    0%{
+        background-color: #7303f3;
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+    }
+    25%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    30%{
+        background-color: #7303f3;
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+    }
+    35%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    45%{
+        background-color: #7303f3;
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+    }
+    60%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    72%{
+        background-color: #7303f3;
+        box-shadow: 0px 0px 6px #70f3, 0px 0px 16px #70f3;
+    }
+    100%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+    .btn .btn::before, .btn::after{
+        animation: none;
+    }
+} 
