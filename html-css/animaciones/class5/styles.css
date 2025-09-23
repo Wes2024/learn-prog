@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.crecedor{
+    height: 100vh;
+}
+
+.box{
+    height: 400px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-fill-mode: both;
+    animation-timeline: --cajita;
+    animation-range-start: contain 0%;
+    animation-range-end: contain 100% ;
+}
+
+@keyframes llenar-barra{
+    from{
+        /* background-color: red;
+        width: 0; */
+        opacity: 0;
+    }
+    to{
+        /* background-color: purple;
+        width: 100%; */
+        opacity: 1;
+    }
+}

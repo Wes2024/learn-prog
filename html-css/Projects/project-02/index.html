@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1.1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="toggle-menu">
+        <label class="header__open-nav-button" for="toggle-menu" role="button">=</label>
+        <div class="header__logo-container">
+            <img src="logo1.1.png" alt="logo" class="header__logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">About me</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="imagen2.jpg" alt="image" class="profile__image">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1 class="profile__title">La evoluación de las computadoras</h1>
+                        <p class="profile__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, repellendus. Hic, consequuntur amet minus error esse nisi culpa doloremque aspernatur sed nesciunt maxime, eius in fugit corporis delectus architecto debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, a. Quod dolores voluptatibus tenetur et inventore architecto temporibus voluptates minus soluta aspernatur consequuntur, non nesciunt quibusdam autem officiis fugiat tempora?
+                        </p>
+                    </div>
+                    <div class="profile__characteristics-container">
+                        <h2 class="profile__subtitle">Caracteristicas</h2>
+                        <ul>
+                            <li class="profile__characteristic">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__characteristic-name">Potencia</span>
+                            </li>
+                            <li class="profile__characteristic">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--90">90%</div>
+                                </div>
+                                <span class="profile__characteristic-name">Velocidad</span>
+                            </li>
+                            <li class="profile__characteristic">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--90">90%</div>
+                                </div>
+                                <span class="profile__characteristic-name">Procesamiento</span>
+                            </li>
+                            <li class="profile__characteristic">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--100">100%</div>
+                                </div>
+                                <span class="profile__characteristic-name">Capacidad</span>
+                            </li>
+                            <li class="profile__characteristic">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__characteristic-name">Durabilidad</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- SECTION -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Project</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    
+    <section class="form" id="form">
+        <h2 class="form__title">CONTACT</h2>
+        <form action="" class="form__form">
+            <div class="form__input-container">
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" placeholder="Carlos Javier">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="apellido">Apellido
+                    <input type="text" id="apellido" placeholder="Perez Gomez">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="email">Email
+                    <input type="email" id="email" placeholder="Pgomez@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="mensaje">Mensaje
+                    <textarea name="mensajeContacto" id="mensaje" placeholder="Ingresar mensaje..."></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <strong class="footer__autor">Weslei Salinas</strong> - Copyright
+    </footer>
+
+</body>
+</html>
