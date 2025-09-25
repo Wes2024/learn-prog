@@ -516,15 +516,14 @@ body{
 /* Animations */
 
 
-@keyframes header-movement{
-    from{
-        padding-top: 20px 0;
+@keyframes header-movement {
+    from {
         transform: translateY(0);
         background-color: var(--color-white);
+        color: var(--color-nav-button);
     }
-    to{
-        padding-top: 20px 0;
-        transform: translateY(-10px);
+    to {
+        transform: translateY(-10px) scaleY(0.9);
         background-color: #10163266;
         color: var(--color-white);
     }

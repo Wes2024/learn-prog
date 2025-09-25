@@ -1,0 +1,49 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    font-family: var(--font);
+    color: var(--font-color);
+    background-color: #48e;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    margin: auto;
+    padding: 20px 50px ;
+    border: 4px solid #000;
+    width: fit-content;
+    /* transition: 1s; */
+
+    /* transform: rotate(0deg); */
+    /* transform: skew(20deg); */
+    transform: translateX(200px);
+}
+
+.box:first-child:hover{
+    rotate: 360deg;
+}
+
+img{
+    /* scale: 1.5 2; */
+    /* transform: scaleY(2); */
+    /* transform: skew(20deg); */
+}

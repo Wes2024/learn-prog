@@ -1,0 +1,57 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    font-family: var(--font);
+    color: var(--font-color);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: #48e;
+    margin: auto;
+    /* filter: drop-shadow(0 0 15px #d31010); */
+    /* filter: blur(10px); */
+    /* filter: brightness(.5); */
+    /* filter: contrast(.5); */
+    /* filter: grayscale(1); */
+    /* filter: saturate(50); */
+    /* backdrop-filter: hue-rotate(-100deg); */
+    /* backdrop-filter: blur(15px); */
+    /* filter: opacity(.5); */
+    /* filter: invert(); */
+
+
+    position: absolute;
+    /* Funcion url() sirva para enlazar imagenes */
+    /* background-image: url("../../img/RE4-small.webp"); */
+    /* drop shadow() crea una sombra en elementos sombras, desenfoques, contrastes */
+    /* minmax(n,m) de valor minimo (n) hasta el maximo (m)  */
+}
+
+img{
+    /* filter: drop-shadow(0 0 15px #ffffff); */
+    /* filter: blur(10px); */
+    max-width: 100%;
+    object-fit: cover;
+    filter: sepia();
+    filter: grayscale() drop-shadow(0 0 45px #000) invert();
+    
+}

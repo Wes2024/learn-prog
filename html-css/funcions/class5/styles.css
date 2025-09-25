@@ -1,0 +1,66 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --font: sans-serif;
+    --tamanio-principal: 2.4rem;
+    --alto-box: 200px;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: var(--font);
+    color: var(--font-color);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    padding: 0 40px;
+    font-size: 30px;
+    border: 6px solid #000;
+
+}
+
+/* 
+
+    calc() realiza la operación de restar el espacio variable.
+
+    clamp() limita esa resta para que sea mínima y máxima, ajustándose a distintos tamaños de pantalla.
+
+*/
+.box:nth-child(1){
+    margin-top: 10px;
+    height: calc(120vh - clamp(2.4rem, 2.2vw, 5rem));
+    width: 60vw;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #639df3 #b9eaff;
+    scrollbar-width: thin;
+    margin-bottom: 20px;
+}
+
+.crecer{
+    height: 200vh;
+}
+
+.box p::first-letter{
+    initial-letter: 2 2;
+}
+
+@supports (initial-letter: 3) {
+    p::first-letter {
+        initial-letter: 3;
+    }
+}
+
+
+
+
+
