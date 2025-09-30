@@ -1,7 +1,7 @@
 :root{
     --color-black: #000;
     --color-white: #fff;
-    --font: sans-serif;
+    --font: monospace;
     --tamanio-principal: 2.4rem;
     --alto-box: 200px;
 }
@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     font-family: var(--font);
     color: var(--font-color);
+    background-color: #000;
 }
 
 *,
@@ -24,7 +25,10 @@ body{
 .box{
     padding: 0 40px;
     font-size: 30px;
-    border: 6px solid #000;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: color-mix(in srgb, #f44 30%, #48e 30%);
+    background-color: color-mix(in srgb, #13c 40%, #fff 100%);
 
 }
 
@@ -47,18 +51,81 @@ body{
 }
 
 .crecer{
-    height: 200vh;
-}
+    height: 200dvh;
+} 
 
 .box p::first-letter{
-    initial-letter: 2 2;
+    initial-letter: 4 2; 
+    color: #f44;
+    padding: 2px;
+    
 }
 
-@supports (initial-letter: 3) {
+@supports (initial-letter: 3 1) {
     p::first-letter {
-        initial-letter: 3;
+        initial-letter: 3 1;
     }
 }
+
+/* .menu {
+    height: 50vh;
+    background: blue;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+} */
+
+.menu {
+    height: fit-content(8dvh, 10dvh);
+    background: #16161c;
+    background: rgba(22, 22, 28, 0.5); /* fondo con opacidad */
+    position: sticky;
+    top: 0;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    margin-left: 10px;
+    font-size: 2.5rem;
+    list-style: none;
+    color: #fff;
+    
+    
+}
+
+.menu li{
+    text-decoration: none;
+    opacity: 1;
+    text-align: center;
+}
+
+
+.image img{
+    margin: 50px;
+    max-width: 100%;
+    /* clip-path: circle(50% at 100px 100px);
+    clip-path: ellipse(30% 50%); */
+    /* transition: clip-path .5s ease-in-out; */
+    /* border: 10px solid #b4e9; */
+    animation: figure 0.5s both;
+}
+
+
+@keyframes figure {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    to {
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+}
+
 
 
 
